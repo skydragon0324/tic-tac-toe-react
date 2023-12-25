@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 import Square from "./Square";
 
@@ -20,15 +20,6 @@ const calculateWinner = (squares) => {
     }
   }
   return null;
-  // lines.every((line) => {
-  //   const [a, b, c] = line;
-  //   if(squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-  //     console.log("line", line);
-  //     console.log("sdsdfsdfsfdsfdsdf");
-  //     return squares[a];
-  //   }
-  //   return null;
-  // })
 }
 
 const Board = (props) => {
